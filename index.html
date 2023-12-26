@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Youtube clone using tailwind css</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#445576] flex">
+
+
+<!-- --------------------left section--------------------------------- -->
+
+
+	<div class="w-1/5 h-full space-y-10 bg-gray-500 ">
+
+	 <div class="  flex bg-gray-600 py-3  px-11 fixed z-30">
+		<div class="flex  gap-[7px]">
+         <span class="material-symbols-outlined text-white  mt-[3px]" >menu</span>
+		 <i class="fa-brands fa-youtube mt-[2px] bg-white rounded-full hidden md:flex" style="color: #f10e19; font-size:27px;"></i>
+		 <h2 class="text-white text-xl font-semibold tracking-tight hidden md:flex">YouTube</h2>
+		 </div>
+	</div>
+
+	<div class=" w-1/6 bg-gray-500 space-y-5 flex flex-col text-white text-sm p-4 fixed hover:overflow-scroll">
+		<div class="md:flex gap-4 bg-gray-700 py-2 px-1">
+				<span class="material-symbols-outlined">home</span>
+				<p class="hidden md:flex">Home</p>
+		</div>
+
+		<div class="md:flex gap-4">
+				<span class="material-symbols-outlined">explore</span>
+				<p class="hidden md:flex">Explore</p>
+		</div>
+
+		<div  class="md:flex gap-4" >
+			<span class="material-symbols-outlined">play_arrow</span>
+			<p  class="hidden md:flex"> Shorts</p>
+		</div>
+			
+		<div  class="md:flex gap-4 ">
+			<span class="material-symbols-outlined">subscriptions</span>
+			<p  class="hidden md:flex">Subscriptions</p>
+		</div>
+			
+		<div class="w-full border-t border-gray-400 "></div>
+
+		    <div class="md:flex gap-4">
+				<span class="material-symbols-outlined">contact_page</span>
+				<p  class="hidden md:flex">Library</p>
+			</div>
+			<div  class="md:flex gap-4">
+				<span class="material-symbols-outlined">history</span>
+				<p  class="hidden md:flex">History</p>
+			</div>
+			<div  class="md:flex gap-4">
+				<span class="material-symbols-outlined">slideshow</span>
+				<p  class="hidden md:flex">Your Videos</p>
+			</div>
+			<div  class="md:flex gap-4">
+				<span class="material-symbols-outlined">schedule</span>
+				<p  class="hidden md:flex">Watch Later</p>
+			</div>
+			<div  class="md:flex gap-4">
+				<span class="material-symbols-outlined">expand_more</span>
+				<p  class="hidden md:flex">Show more</p>
+			</div>
+
+			<div class="w-full border-t border-gray-400 "></div>
+			
+			<div class="font-semibold tracking-normal">
+	            <h2  class="hidden md:flex">SUBSCRIPTIONS</h2>
+			</div>
+
+		<div class="md:flex gap-4">
+				<span class="material-symbols-outlined">local_fire_department</span>
+				<p  class="hidden md:flex">Trending</p>
+			</div>
+			<div class="md:flex gap-4">
+				<span class="material-symbols-outlined">local_mall</span>
+				<p  class="hidden md:flex">Shopping</p>
+			</div>
+			<div class="md:flex gap-4">
+				<span class="material-symbols-outlined">music_note</span>
+				<p  class="hidden md:flex">Music</p>
+			</div>
+			<div class="md:flex gap-4">
+				<span class="material-symbols-outlined">movie</span>
+				<p  class="hidden md:flex">Movies</p>
+			</div>
+			<div class="md:flex gap-4">
+				<span class="material-symbols-outlined">sensors</span>
+				<p  class="hidden md:flex">Live</p>
+			</div>
+			<div class="md:flex gap-4">
+				<span class="material-symbols-outlined">feed</span>
+				<p  class="hidden md:flex">News</p>
+			</div>
+			<div class="md:flex gap-4">
+				<span class="material-symbols-outlined">sports_esports</span>
+				<p  class="hidden md:flex">Gaming</p>
+			</div>
+			
+	</div>
+
+</div>
+
+<!-- --------------right section-------------------------- -->
+
+<div class="w-full px-1 mx-2 space-y-2 ">
+
+	<div class="w-full flex justify-between  py-2 fixed bg-gray-600 z-20">
+
+	<div class="ml-64  md:w-full hidden md:flex">
+		<input  placeholder="Search" class="w-96 rounded bg-gray-500 border border-r-0 border-gray-400 p-1 text-white focus:outline-0" >
+		<i class="fa-solid fa-magnifying-glass bg-gray-700 border border-gray-400  py-2 px-4 -ml-2" style="font-size:1rem; color: white;"></i>
+		<i class="fa-solid fa-microphone ml-9" style="font-size:20px; color: white;"></i>	
+	</div>
+
+	<div class="flex fixed right-4 w-1/1 bg-gray-600 md:bg-hidden">
+		<span class="material-symbols-outlined " style="font-size:26px;  color: white;">video_call</span>
+		<span class="material-symbols-outlined mx-9"style="font-size:26px;  color: white;">notifications</span>
+		<div class="bg-[url('https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg')] bg-cover h-7 w-7 rounded-full">
+			
+		</div>
+	</div>
+   </div>
+
+
+	<div class="w-full flex space-x-4 whitespace-nowrap bg-gray-600 p-4 top:2 md:top-10 fixed z-20">
+				<div class="py-1 px-3 text-black bg-white border rounded-2xl">
+					<h5>All</h5>
+				</div>
+
+                <div class="py-1 px-3 text-white bg-gray-500 border border-none rounded-2xl">
+					<h5>Mixes</h5>
+				</div>
+
+				<div class="py-1 px-3 text-white bg-gray-500 border border-none rounded-2xl">
+					<h5>Music</h5>
+				</div>
+
+				<div class="py-1 px-3 text-white bg-gray-500 border border-none rounded-2xl">
+					<h5>Tamil Cinema</h5>
+				</div>
+
+				<div class="py-1 px-3 text-white bg-gray-500 border border-none rounded-2xl">
+					<h5>Live</h5>
+				</div>
+
+				<div class="py-1 px-3 text-white bg-gray-500 border border-none rounded-2xl">
+					<h5>Web Development</h5>
+				</div>
+
+				<div class="py-1 px-3 text-white bg-gray-500 border border-none rounded-2xl">
+					<h5>Arijit Singh</h5>
+				</div>
+
+				<div class="py-1 px-3 text-white bg-gray-500 border border-none rounded-2xl">
+					<h5>Data Structure</h5>
+				</div>
+
+				<div class="py-1 px-3 text-white bg-gray-500 border border-none rounded-2xl">
+					<h5>Watched</h5>
+				</div>
+
+				<div class="py-1 px-3 text-white bg-gray-500 border border-none rounded-2xl">
+					<h5>Recently Uploaded</h5>
+				</div>
+
+			</div>
+
+			
+
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 top-40 absolute z-0
+			        ">
+				<div class="mb-9">
+				<iframe  src="https://www.youtube.com/embed/HbNfCM4ilBQ?si=IQeg2Vt4GlokuNEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+		   </div>
+       
+                <div class="mb-9">
+				<iframe width="360" height="315" src="https://www.youtube.com/embed/mNuhKUOD_A0?si=uRGvA-4SH2HilZQa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full  border rounded-lg"> </iframe>
+               <div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+	            </div>
+
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/47GEIJ3eQ_o?si=rKZQS_qAuXtf7Nsq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+                <div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+					
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/og4p1qJNf1Y?si=CH_x9Fbteg4W7jnt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+ 
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/FxgM9k1rg0Q?si=TamoXlp3RcDAivrn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/cjjE8pa4U_M?si=gqX5myhZsU07x2ie" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover" ></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/A_zNBGPGVVg?si=K_Z3GcDq4xsQqhYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+
+
+                <div class="mb-9">
+				<iframe  src="https://www.youtube.com/embed/HbNfCM4ilBQ?si=IQeg2Vt4GlokuNEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+		        </div>
+                
+                <div class="mb-9">
+				<iframe width="360" height="315" src="https://www.youtube.com/embed/mNuhKUOD_A0?si=uRGvA-4SH2HilZQa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full  border rounded-lg"> </iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+	
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/47GEIJ3eQ_o?si=rKZQS_qAuXtf7Nsq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+   
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/og4p1qJNf1Y?si=CH_x9Fbteg4W7jnt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+
+                <div class="mb-9">
+				<iframe  src="https://www.youtube.com/embed/HbNfCM4ilBQ?si=IQeg2Vt4GlokuNEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+		
+                <div class="mb-9">
+				<iframe width="360" height="315" src="https://www.youtube.com/embed/mNuhKUOD_A0?si=uRGvA-4SH2HilZQa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full  border rounded-lg"> </iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+	
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/47GEIJ3eQ_o?si=rKZQS_qAuXtf7Nsq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+ 
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/og4p1qJNf1Y?si=CH_x9Fbteg4W7jnt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+ 
+                <div class="mb-9">
+				<iframe  src="https://www.youtube.com/embed/HbNfCM4ilBQ?si=IQeg2Vt4GlokuNEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+		
+                <div class="mb-9">
+				<iframe width="360" height="315" src="https://www.youtube.com/embed/mNuhKUOD_A0?si=uRGvA-4SH2HilZQa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full  border rounded-lg"> </iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+	
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/47GEIJ3eQ_o?si=rKZQS_qAuXtf7Nsq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+				</div>
+ 
+                <div class="mb-9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/og4p1qJNf1Y?si=CH_x9Fbteg4W7jnt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-48 md:h-full border rounded-lg bg-cover"></iframe>
+				<div class="flex text-white justify-evenly text-sm mt-1  ">
+				<h4>Start with Javascript  </h4>  &#124;
+					<p>Chai Aur Code</p>
+		       </div>
+			   </div>
+				
+			</div>	
+  
+</div>
+
+
+
+</body>
+</html>
